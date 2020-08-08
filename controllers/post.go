@@ -10,5 +10,6 @@ import (
 // GetPosts retrieve all the posts
 func GetPosts(w http.ResponseWriter, r *http.Request) {
 	posts := database.Posts
+
 	utils.ExecuteTemplate(w, "index.html", posts)
 }
